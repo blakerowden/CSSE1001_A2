@@ -7,7 +7,7 @@ Semester 2, 2018
 
 import random
 
-__author__ = "Your name & student number here"
+__author__ = "Blake Rowden s4427634"
 
 # Write your classes here
 
