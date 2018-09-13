@@ -32,7 +32,7 @@ class Card(object):
 
     def matches(self, card):
         if self.get_colour() == card.get_colour() or \
-           self.get_number() == card.get_number():
+                self.get_number() == card.get_number():
             return True
         else:
             return False
@@ -77,6 +77,9 @@ class Pickup4Card(Card):
     def play(self, player, game):
         game.get_turns().peak().get_deck().add_cards(game.pickup_pile.pick(4))
 
+    def matches(self, card):
+        return True
+
 
 class Deck(object):
     def __init__(self, starting_cards=None):
@@ -109,10 +112,7 @@ class Deck(object):
             self._deck.append(card)
 
     def top(self):
-        try:
-            return self.get_cards()[len(self.get_cards())]
-        except IndexError:
-            return None
+        return self.get_cards()[len(self.get_cards())-1]
 
 
 class Player(object):
@@ -141,6 +141,9 @@ class HumanPlayer(Player):
     def is_playable(self):
         return True
 
+    def pick_card(self, putdown_pile):
+        pass
+
 
 class ComputerPlayer(Player):
 
@@ -152,7 +155,6 @@ class ComputerPlayer(Player):
             if i.matches(putdown_pile.top()):
                 self.get_deck().get_cards().remove(i)
                 return i
-
 
 
 def main():
