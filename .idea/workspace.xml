@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad2d60d3-c64d-4133-93d3-d71f6dff5e0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a2.py" beforeDir="false" afterPath="$PROJECT_DIR$/a2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,21 +17,21 @@
     <SUITE FILE_PATH="coverage/CSSE1001_A2$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1536803505455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/CSSE1001_A2$a2.coverage" NAME="a2 Coverage Results" MODIFIED="1536646360597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSSE1001_A2$a2_support.coverage" NAME="a2_support Coverage Results" MODIFIED="1536750037683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSSE1001_A2$gui.coverage" NAME="gui Coverage Results" MODIFIED="1537166105577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSSE1001_A2$gui.coverage" NAME="gui Coverage Results" MODIFIED="1537167529853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSSE1001_A2$scratch_1.coverage" NAME="scratch_1 Coverage Results" MODIFIED="1536714033341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="395872662">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.open.time.7" value="4" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,18 +54,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="2686" />
-          <entry key="py" value="8507" />
+          <entry key="py" value="8696" />
           <entry key="txt" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="10092" />
+          <entry key="Python" value="10281" />
           <entry key="Scratch" value="1101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FavoritesManager">
@@ -77,8 +77,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5644">
-              <caret line="332" column="7" selection-start-line="332" selection-start-column="7" selection-end-line="332" selection-end-column="7" />
+            <state relative-caret-position="-4170">
+              <caret line="110" column="28" lean-forward="true" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+              <folding>
+                <marker date="1537167529842" expanded="true" signature="2519:2980" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4454">
+            <state relative-caret-position="1107">
               <caret line="267" column="52" selection-start-line="267" selection-start-column="52" selection-end-line="267" selection-end-column="52" />
               <folding>
                 <element signature="e#58#78#0" expanded="true" />
@@ -454,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5644">
-          <caret line="332" column="7" selection-start-line="332" selection-start-column="7" selection-end-line="332" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a2_support.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4063">
@@ -479,9 +475,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28866">
+          <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4454">
+        <state relative-caret-position="1107">
           <caret line="267" column="52" selection-start-line="267" selection-start-column="52" selection-end-line="267" selection-end-column="52" />
           <folding>
             <element signature="e#58#78#0" expanded="true" />
@@ -489,10 +492,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/tkinter/__init__.py">
+    <entry file="file://$PROJECT_DIR$/a2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28866">
-          <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
+        <state relative-caret-position="-4170">
+          <caret line="110" column="28" lean-forward="true" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+          <folding>
+            <marker date="1537167529842" expanded="true" signature="2519:2980" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -106,7 +106,25 @@ class Card(object):
         return self.__str__()
 
 
-class ReverseCard(Card):
+class SpecialCard(Card):
+
+    def matches(self, card):
+        """
+        Determines if the next card can be "legally" placed on this card.
+
+        Parameters:
+            card (Card): The card that is checked against this card.
+
+        Returns:
+             bool: True iff the given card matches this card, against uno rules.
+        """
+        if self.get_colour() == card.get_colour() or \
+                type(self) == type(card):
+            return True
+        return False
+
+
+class ReverseCard(SpecialCard):
     """
     A subclass of Card which reverses order of turns.
     """
@@ -116,7 +134,7 @@ class ReverseCard(Card):
         game.reverse()
 
 
-class SkipCard(Card):
+class SkipCard(SpecialCard):
     """
     A subclass of Card which skips the turn of the next player.
     """
@@ -126,7 +144,7 @@ class SkipCard(Card):
         game.skip()
 
 
-class Pickup2Card(Card):
+class Pickup2Card(SpecialCard):
     """
     A subclass of Card which makes the next player pickup two cards.
     """
@@ -254,7 +272,7 @@ class Deck(object):
             None: Returns iff deck is empty.
         """
         try:
-            return self.get_cards()[len(self.get_cards())-1]
+            return self.get_cards()[self.get_amount()-1]
         except IndexError:
             return None
 
@@ -325,6 +343,12 @@ class HumanPlayer(Player):
             bool: True iff player is human.
         """
         return True
+
+    def pick_card(self, putdown_pile):
+        """
+        Not used for HumanPlayer
+        """
+        pass
 
 
 class ComputerPlayer(Player):
