@@ -81,7 +81,7 @@ class Card(object):
              bool: True iff the given card matches this card, against uno rules.
         """
         if self.get_colour() == card.get_colour() or \
-                self.get_number() == card.get_number():
+                (self.get_number() == card.get_number() and type(card) == Card):
             return True
         else:
             return False
@@ -96,8 +96,9 @@ class Card(object):
         """
         Returns the string representation of the card.
         """
-        return "Card({0}, {1})".format(self.get_number(),
-                                       self.get_colour())
+        return "{0}({1}, {2})".format(type(self).__name__,
+                                      self.get_number(),
+                                      self.get_colour())
 
     def __repr__(self):
         """
@@ -107,6 +108,9 @@ class Card(object):
 
 
 class SpecialCard(Card):
+    """
+    A class to represent a special card in Uno with a special type and colour.
+    """
 
     def matches(self, card):
         """
@@ -118,8 +122,7 @@ class SpecialCard(Card):
         Returns:
              bool: True iff the given card matches this card, against uno rules.
         """
-        if self.get_colour() == card.get_colour() or \
-                type(self) == type(card):
+        if self.get_colour() == card.get_colour():
             return True
         return False
 
